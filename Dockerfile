@@ -1,4 +1,5 @@
 
+
 FROM alpine
 RUN ls -alhrt ~
 RUN apk update
@@ -9,7 +10,7 @@ RUN ls waaaaaa
 RUN git config --global user.email "you@example.com" &&\
     git config --global user.name "Your Name"
 RUN cd waaaaaa &&\
-    touch danish &&\
+    touch almas &&\
     git add . &&\
     git commit -m "commit from cb 1" &&\
     git push
