@@ -6,8 +6,10 @@ RUN apk add git
 RUN env
 RUN git clone https://github.com/danblacklist/waaaaaa.git
 RUN ls waaaaaa
-RUN cd waaaaaa
-RUN touch danish
-RUN git add .
-RUN git commit -m "commit from CB"
-RUN git push
+RUN git config --global user.email "you@example.com" &&\
+    git config --global user.name "Your Name"
+RUN cd waaaaaa &&\
+    touch danish &&\
+    git add . &&\
+    git commit -m "commit from cb 1" &&\
+    git push
