@@ -6,3 +6,4 @@ phases:
        - ls -alhrt
        - echo "danish"
        - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+       - echo "export CODEBUILD_RESOLVED_SOURCE_VERSION=$CODEBUILD_RESOLVED_SOURCE_VERSION" > envs
