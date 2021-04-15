@@ -5,3 +5,4 @@ phases:
     commands:
        - ls -alhrt
        - echo "danish"
+       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
