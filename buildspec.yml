@@ -1,3 +1,4 @@
+
 version: 0.2
 
 phases:
@@ -7,5 +8,6 @@ phases:
        - echo "danish"
        - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
        - echo "export CODEBUILD_RESOLVED_SOURCE_VERSION=$CODEBUILD_RESOLVED_SOURCE_VERSION" > envs
+       - cat envs
        - . ./envs
        - . ./env2
